@@ -1,2 +1,15 @@
-<h1>This is the answer questions page</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, minima aspernatur rerum excepturi ea architecto doloribus corrupti inventore dolores, adipisci laudantium neque optio, sequi voluptas veniam nesciunt. Amet, recusandae tempore!</p>
+<div class="container">
+<h1>Stupid Coaching</h1>
+
+<div class="question">
+  <p><strong><%= @question %></strong></p>
+  <p><em>-You, [<%= Time.now %>]</em></p>
+</div>
+
+<div class="answer">
+  <p><strong><%= @answer %></strong></p>
+  <p><em>-Your coach, [<%= Time.now %>]</em></p>
+</div>
+<br>
+<%= link_to "Ask a new question", ask_path %>
+</div>
